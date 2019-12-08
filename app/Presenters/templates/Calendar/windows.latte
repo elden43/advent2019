@@ -1,0 +1,11 @@
+{block content}
+<h1>Advent of Code 2019</h1>
+<p>
+	{for $i = 1; $i <= 24; $i++}
+		{if $i <= $solved}
+			Day {$i}: <a n:href = "Day{$i}:puzzleResult">solutions</a><br />
+		{else}
+			Day {$i}: solutions<br />
+		{/if}
+	{/for}
+</p>
