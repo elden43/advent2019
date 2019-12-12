@@ -8,6 +8,6 @@ namespace App\Presenters;
 final class CalendarPresenter extends BasePresenter
 {
 	public function renderWindows() {
-		$this->template->solved = 2;
+		$this->template->solved = 4;
 	}
 }
