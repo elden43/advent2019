@@ -25,4 +25,8 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 		}
 	}
 
+	protected function loadRowInput(string $filename) {
+		return file_get_contents('../www/inputs/' . $filename);
+	}
+
 }
