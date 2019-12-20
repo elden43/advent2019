@@ -8,6 +8,14 @@ namespace App\Presenters;
 final class CalendarPresenter extends BasePresenter
 {
 	public function renderWindows() {
-		$this->template->solved = 4;
+		$puzzlesSolved = [];
+		for($i = 1; $i <= 25; $i++) {
+			if(class_exists('App\Presenters\Day' . $i . 'Presenter')) {
+				$puzzlesSolved[$i] = true;
+			}
+		}
+
+		$this->template->puzzlesSolved = $puzzlesSolved;
 	}
+
 }

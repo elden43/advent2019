@@ -24,4 +24,5 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 			return explode(',', $file);
 		}
 	}
+
 }
